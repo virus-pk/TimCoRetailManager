@@ -5,3 +5,4 @@
 
 * Setting Up a GitHub Repository ✔
 * Creating a WebAPI with Authentication ✔
+* Configuring Swagger in WebAPI ✔
