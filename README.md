@@ -7,3 +7,4 @@
 * Creating a WebAPI with Authentication ✔
 * Configuring Swagger in WebAPI ✔
 * SQL Database Project ✔
+* WPF with MVVM Project Setup ✔
