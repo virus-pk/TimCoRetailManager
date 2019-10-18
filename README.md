@@ -8,3 +8,4 @@
 * Configuring Swagger in WebAPI ✔
 * SQL Database Project ✔
 * WPF with MVVM Project Setup ✔
+* Dependency Injection in WPF ✔
