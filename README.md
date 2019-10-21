@@ -10,3 +10,4 @@
 * WPF with MVVM Project Setup ✔
 * Dependency Injection in WPF ✔
 * Planning the Register ✔
+* SQL Database Table Creation ✔

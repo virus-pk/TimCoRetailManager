@@ -65,4 +65,11 @@
   <ItemGroup>
     <None Include="PublishLocations\TRMData.publish.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Tables\Sale.sql" />
+    <Build Include="dbo\Tables\SaleDetail.sql" />
+    <Build Include="dbo\Tables\Product.sql" />
+    <Build Include="dbo\Tables\Inventory.sql" />
+  </ItemGroup>
 </Project>
