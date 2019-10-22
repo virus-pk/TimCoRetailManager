@@ -12,3 +12,4 @@
 * Planning the Register ✔
 * SQL Database Table Creation ✔
 * WPF Login Form Creation ✔
+* Wire Up the WPF Login form to the API ✔
