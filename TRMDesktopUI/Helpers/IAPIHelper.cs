@@ -5,6 +5,6 @@ namespace TRMDesktopUI.Helpers
 {
     public interface IAPIHelper
     {
-        Task<AuthenticatedUser> AuthenticateAsync(string username, string password);
+        Task<AuthenticatedUser> Authenticate(string username, string password);
     }
 }
