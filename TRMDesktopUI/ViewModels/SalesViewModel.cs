@@ -90,7 +90,7 @@ namespace TRMDesktopUI.ViewModels
 
         }
 
-        public bool CanRemoceFromCart
+        public bool CanRemoveFromCart
         {
             get
             {
@@ -102,7 +102,7 @@ namespace TRMDesktopUI.ViewModels
             }
         }
 
-        public void RemoceFromCart()
+        public void RemoveFromCart()
         {
 
         }

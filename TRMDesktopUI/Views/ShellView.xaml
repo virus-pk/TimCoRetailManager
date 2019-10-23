@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TRMDesktopUI.Views"
         mc:Ignorable="d"
         FontSize="18"
-        Title="ShellView" Height="450" Width="800">
+        Title="ShellView" Height="600" Width="1000">
     <DockPanel>
         <Menu DockPanel.Dock="Top" FontSize="18">
             <MenuItem Header="_File">
@@ -17,7 +17,7 @@
             </MenuItem>
         </Menu>
         <Grid>
-            <ContentControl x:Name="ActiveItem" Margin="5" />
+            <ContentControl x:Name="ActiveItem" Margin="20 5 20 20" />
         </Grid>
     </DockPanel>
 </Window>
