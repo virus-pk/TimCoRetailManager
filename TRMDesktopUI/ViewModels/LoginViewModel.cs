@@ -92,7 +92,7 @@ namespace TRMDesktopUI.ViewModels
                 ErrorMessage = "";
                 var result = await _apiHelper.Authenticate(UserName, Password);
 
-                //TODO: Capture more info on User
+                // TODO Capture more info on User
                 await _apiHelper.GetLoggedInUserInfo(result.Access_Token);
             }
             catch (Exception ex)

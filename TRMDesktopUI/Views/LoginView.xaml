@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:TRMDesktopUI.Views"
              mc:Ignorable="d" 
              Background="WhiteSmoke"
-             FontSize="20"
+             FontSize="24"
              d:DesignHeight="425" d:DesignWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
