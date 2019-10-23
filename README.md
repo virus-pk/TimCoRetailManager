@@ -16,3 +16,4 @@
 * Login Form Error Handling ✔
 * Getting User Data ✔
 * Getting User Data (Part 2) ✔
+* Sales Page Creation ✔
