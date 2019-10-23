@@ -15,3 +15,4 @@
 * Wire Up the WPF Login form to the API ✔
 * Login Form Error Handling ✔
 * Getting User Data ✔
+* Getting User Data (Part 2) ✔
