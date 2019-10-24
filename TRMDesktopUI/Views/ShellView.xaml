@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TRMDesktopUI.Views"
         mc:Ignorable="d"
+        Background="WhiteSmoke"
         FontSize="18"
         Title="ShellView" Height="600" Width="1000">
     <DockPanel>

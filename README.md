@@ -19,3 +19,4 @@
 13. Getting User Data (Part 2) ✔
 14. Sales Page Creation ✔
 15. Event Aggregation in WPF ✔
+16. Display Product Data ✔
