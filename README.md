@@ -20,3 +20,4 @@
 14. Sales Page Creation ✔
 15. Event Aggregation in WPF ✔
 16. Display Product Data ✔
+17. Wire Up the WPF Shopping Cart ✔
