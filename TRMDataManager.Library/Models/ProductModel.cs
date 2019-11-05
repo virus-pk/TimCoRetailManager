@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TRMDataManager.Library.Models
+﻿namespace TRMDataManager.Library.Models
 {
     public class ProductModel
     {
@@ -28,5 +22,9 @@ namespace TRMDataManager.Library.Models
         /// Remaining items in the stock.
         /// </summary>
         public int QuantityInStock { get; set; }
+        /// <summary>
+        /// Identifies if the item is taxable or not.
+        /// </summary>
+        public bool IsTaxable { get; set; }
     }
 }

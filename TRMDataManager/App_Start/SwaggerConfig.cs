@@ -1,8 +1,8 @@
-using System.Web.Http;
-using WebActivatorEx;
-using TRMDataManager;
 using Swashbuckle.Application;
+using System.Web.Http;
+using TRMDataManager;
 using TRMDataManager.App_Start;
+using WebActivatorEx;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 

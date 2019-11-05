@@ -1,8 +1,5 @@
 ﻿using Swashbuckle.Swagger;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Http.Description;
 
 namespace TRMDataManager.App_Start
@@ -15,7 +12,7 @@ namespace TRMDataManager.App_Start
             {
                 post = new Operation
                 {
-                    tags = new List<string> { "Auth"},
+                    tags = new List<string> { "Auth" },
                     consumes = new List<string>
                     {
                         "application/x-www-form-urlencoded"

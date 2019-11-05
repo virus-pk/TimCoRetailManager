@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Caliburn.Micro;
+﻿using Caliburn.Micro;
 using TRMDesktopUI.EventModels;
 
 namespace TRMDesktopUI.ViewModels
@@ -19,7 +14,7 @@ namespace TRMDesktopUI.ViewModels
             _events = events;
             _salesVM = salesVM;
             _container = container;
-            
+
             _events.Subscribe(this);
 
             ActivateItem(_container.GetInstance<LoginViewModel>());
