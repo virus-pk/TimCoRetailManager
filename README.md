@@ -21,3 +21,4 @@
 15. Event Aggregation in WPF ✔
 16. Display Product Data ✔
 17. Wire Up the WPF Shopping Cart ✔
+18. Modifying SQL, the API, and WPF to Add Taxes ✔
