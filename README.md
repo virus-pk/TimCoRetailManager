@@ -24,3 +24,4 @@
 18. Modifying SQL, the API, and WPF to Add Taxes ✔
 19. Early Refactoring in C# ✔
 20. Posting Sales Data to an API ✔
+21. Automapper and INotifyPropertyChanged ✔
