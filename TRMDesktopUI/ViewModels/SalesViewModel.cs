@@ -99,6 +99,44 @@ namespace TRMDesktopUI.ViewModels
             }
         }
 
+        private ProductDisplayModel _selectedProduct;
+
+        public ProductDisplayModel SelectedProduct
+        {
+            get { return _selectedProduct; }
+            set
+            {
+                _selectedProduct = value;
+                NotifyOfPropertyChange(() => SelectedProduct);
+                NotifyOfPropertyChange(() => CanAddToCart);
+            }
+        }
+
+        private async Task ResetSalesViewModel()
+        {
+            Cart = new BindingList<CartItemDisplayModel>();
+            // TODO: Add clearing the selectedCartItem if it does not do it itself
+            await LoadProducts();
+
+            NotifyOfPropertyChange(() => SubTotal);
+            NotifyOfPropertyChange(() => Tax);
+            NotifyOfPropertyChange(() => Total);
+            NotifyOfPropertyChange(() => CanCheckOut);
+        }
+
+        private CartItemDisplayModel _selectedCartItem;
+
+        public CartItemDisplayModel SelectedCartItem
+        {
+            get { return _selectedCartItem; }
+            set
+            {
+                _selectedCartItem = value;
+                NotifyOfPropertyChange(() => SelectedCartItem);
+                NotifyOfPropertyChange(() => CanRemoveFromCart);
+            }
+        }
+
         private BindingList<CartItemDisplayModel> _cart = new BindingList<CartItemDisplayModel>();
 
         public BindingList<CartItemDisplayModel> Cart
@@ -129,32 +167,6 @@ namespace TRMDesktopUI.ViewModels
             {
                 _products = value;
                 NotifyOfPropertyChange(() => Products);
-            }
-        }
-
-        private ProductDisplayModel _selectedProduct;
-
-        public ProductDisplayModel SelectedProduct
-        {
-            get { return _selectedProduct; }
-            set
-            {
-                _selectedProduct = value;
-                NotifyOfPropertyChange(() => SelectedProduct);
-                NotifyOfPropertyChange(() => CanAddToCart);
-            }
-        }
-
-        private CartItemDisplayModel _selectedCartItem;
-
-        public CartItemDisplayModel SelectedCartItem
-        {
-            get { return _selectedCartItem; }
-            set
-            {
-                _selectedCartItem = value;
-                NotifyOfPropertyChange(() => SelectedCartItem);
-                NotifyOfPropertyChange(() => CanRemoveFromCart);
             }
         }
 
@@ -205,7 +217,7 @@ namespace TRMDesktopUI.ViewModels
             {
                 bool output = false;
 
-                if (SelectedCartItem != null && SelectedCartItem?.Product.QuantityInStock > 0)
+                if (SelectedCartItem != null && SelectedCartItem?.QuantityInCart > 0)
                 {
                     output = true;
                 }
@@ -231,6 +243,7 @@ namespace TRMDesktopUI.ViewModels
             NotifyOfPropertyChange(() => Tax);
             NotifyOfPropertyChange(() => Total);
             NotifyOfPropertyChange(() => CanCheckOut);
+            NotifyOfPropertyChange(() => CanAddToCart);
         }
 
         public bool CanCheckOut
@@ -239,7 +252,6 @@ namespace TRMDesktopUI.ViewModels
             {
                 bool output = false;
 
-                // TODO Make sure there is something in the cart
                 if (Cart.Count > 0)
                 {
                     output = true;
@@ -251,7 +263,6 @@ namespace TRMDesktopUI.ViewModels
 
         public async Task CheckOut()
         {
-            // TODO: Create a SaleModel and post to the API
             SaleModel sale = new SaleModel();
 
             foreach (var item in Cart)
@@ -264,6 +275,8 @@ namespace TRMDesktopUI.ViewModels
             }
 
             await _saleEndpoint.PostSale(sale);
+
+            await ResetSalesViewModel();
         }
     }
 }

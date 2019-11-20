@@ -25,3 +25,4 @@
 19. Early Refactoring in C# ✔
 20. Posting Sales Data to an API ✔
 21. Automapper and INotifyPropertyChanged ✔
+22. C# Debugging and Clean Up ✔
