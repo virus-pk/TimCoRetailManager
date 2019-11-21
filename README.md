@@ -28,3 +28,4 @@
 22. C# Debugging and Clean Up ✔
 23. SQL Transactions in C# using Dapper ✔
 24. SQL Transaction Bug Fix ✔
+25. Admin Endpoints in WebAPI ✔
