@@ -29,3 +29,4 @@
 23. SQL Transactions in C# using Dapper ✔
 24. SQL Transaction Bug Fix ✔
 25. Admin Endpoints in WebAPI ✔
+26. Adding Roles to the API ✔
