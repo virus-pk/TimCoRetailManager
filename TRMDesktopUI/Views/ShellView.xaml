@@ -13,6 +13,9 @@
             <MenuItem Header="_File">
                 <MenuItem x:Name="ExitApplication" Header="E_xit" />
             </MenuItem>
+            <MenuItem Header="_Users">
+                <MenuItem x:Name="UserManagement" Header="User _Management" />
+            </MenuItem>
             <MenuItem Header="_Account" Visibility="{Binding IsLoggedIn, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}">
                 <MenuItem x:Name="LogOut" Header="_Log Out" />
             </MenuItem>
