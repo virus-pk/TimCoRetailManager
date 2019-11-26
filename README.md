@@ -30,3 +30,4 @@
 24. SQL Transaction Bug Fix ✔
 25. Admin Endpoints in WebAPI ✔
 26. Adding Roles to the API ✔
+27. User Permissions and Error Handling ✔
